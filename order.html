@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Order Form</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body bgcolor="#cfffe5">
+        <marquee behavior = "scroll"
+        scrollamount = "20">The Hideaway Joint Combo is 25% off from 2/24-2/29!</marquee>
+        <div class = "container">
+        <header>
+        <nav>
+            <ul>
+                <li><a href = "About-Us.html">
+                The Hideaway Joint </a></li>
+                <li><a href="index.html">
+                Home</a></li>
+                <li><a href="menu.html">
+                Menu</a></li>
+                <li><a href="order.html">Order Form</a></li>
+                <li><a href="location.html">Locations</a></li>
+            </ul>
+        </nav>
+        </header>
+        </div>
+        <img class = "logo" src="Website Logo.png"
+        onmouseover ="this.src='Hover Image.png'" 
+        onmouseout ="this.src='Website Logo.png'"/>
+        
+        <form class = "order" method = "post" action = "process.php">
+          <fieldset>
+            <legend> Order Form </legend><br/>
+            First Name: <input type="text" size="30" name="firstname" /><br /><br/>
+          Last Name: <input type="text" size="30" name="lastname" /><br /><br />
+          Phone Number: <input type="text" size = "30"
+          name="phonenumber" /><br /><br />
+          <div><h4>Entrees:</h4>
+          <input type="checkbox" name="entrees" /> Fried Calamari w/ Fries and Tarter Sauce <br />
+          <input type="checkbox" name="entrees" /> The Hideaway Joint Combo <br />
+          <input type="checkbox" name="entrees" /> Baby Back Ribs w/ Fries, BBQ Sauce, & Ketchup <br />
+          <input type="checkbox" name="entrees" /> Jerk Chicken Sandwich w/ Fries & BBQ Sauce <br />
+          <input type="checkbox" name="entrees" /> Cuban Black Bean Soup <br />
+          <input type="checkbox" name="entrees" /> Buttermilk Chicken Jibaritos <br />
+          <input type="checkbox" name="entrees" /> Applewood Bacon & Cheddar Burger</div>
+          <div><h4>Appetizers:</h4>
+          <input type="checkbox" name="appetizers" /> Coconut Shrimp w/ Citrus-Mustard Sauce <br />
+          <input type="checkbox" name="appetizers" /> Habanero Chicken Wings w/ Celery & Sour Cream <br />
+          <input type="checkbox" name="appetizers" /> Crispy Fried Yuca w/ Dipping Sauce <br />
+          <input type="checkbox" name="appetizers" /> Crab and Avacado Stack <br />
+          <input type="checkbox" name="appetizers" /> Chips w/ Spinach Dip <br />
+          <input type="checkbox" name="appetizers" /> Beef Empanadas <br />
+          <input type="checkbox" name="appetizers" /> Chorizo Meatballs</div>
+          <div><h4>Beverages:</h4>
+          <input type="checkbox" name="beverages" /> Mango Jalapeno Mojito <br />
+          <input type="checkbox" name="beverages" /> Strawberry Mojito <br />
+          <input type="checkbox" name="beverages" /> Strawberry Margarita <br />
+          <input type="checkbox" name="beverages" /> Superior Pineapple <br />
+          <input type="checkbox" name="beverages" /> Pineapple-Coconut Martini	 <br />
+          <input type="checkbox" name="beverages" /> Ice cold Beer <br />
+          <input type="checkbox" name="beverages" /> Ultimate Pina Colada</div><br/>
+          <div><h4>Payment Method:</h4>
+          <select name = "payment">
+            <option value = "cash">Cash</option>
+            <option value = "check">Check</option>
+            <option value = "creditcard">Debit/Credit Card</option>
+            </select>
+            </div><br />
+            <div><h4> Feedback: <div><h4>
+            <textarea name="more" rows="8" cols="30"></textarea><br /><br /> 
+          <input type="submit" class = "btn" onclick= "alert('Thank you for Ordering!')" value="Submit!" />
+          <input type="reset" class = "btn" value="Reset!" />
+          </fieldset>
+        </form>
+        <br/>
+
+    </body>
+    </html>
